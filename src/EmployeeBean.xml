@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	   <bean id="adrs" class="Address">
+		<property name="city" value="Hyd" />
+		<property name="state" value="Telangana" />
+		<property name="zipCode" value="500081" />
+		
+	</bean>
+	
+	<bean id="emp" class="Employee" init-method="myInit" destroy-method="myDestroy">
+		<property name="eid" value="102" />
+		<property name="ename" value="John Cena" />
+		<constructor-arg ref="adrs" />
+		<property name="gender" value="M"/>	
+	
+	</bean>
+
+	<!--   <bean id="emp2" class="Employee">
+		<property name="eid" value="104" />
+		<property name="ename" value="Jenny Smith" />
+		<property name="address" value="Nortthern Shores" />
+		<property name="gender" value="F" />
+	</bean>
+	-->
+	<!-- more bean definitions go here -->
+
+</beans>
