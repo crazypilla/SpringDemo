@@ -1,5 +1,5 @@
 # SpringDemo
-This is a repository created to demonstrate my newly learned skill: Spring.
+This is a repository created to demonstrate my newly learnt skill: Spring.
 Employee details are stored as objects which are populated through XML configurations.
 I have learnt the following concepts while building this example:
 
